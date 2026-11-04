@@ -920,12 +920,12 @@ body.map-open .dock{transform:translateY(140%)}
   <div class="wrap">
     <div class="kick rv"><b>System 5 of 5</b> Information · AI-assisted build</div>
     <div class="room-head">
-      <h2 class="rv">A short-let operations and analytics dashboard</h2>
-      <div class="metric rv"><b>Live</b><span>in use, with a public demo</span></div>
+      <h2 class="rv">A property operations and analytics platform</h2>
+      <div class="metric rv"><b>Live demo</b><span>read-only, with synthetic data</span></div>
     </div>
     <div class="role rv">
       <span class="yr">2025 — present</span>
-      <b>Internal systems for a short-let operation</b>
+      <b>From fragmented spreadsheets to a connected operating system</b>
       <span>A London short-let operator · operations and analytics</span>
       <em>Where improving the process was no longer enough and the tool had to be built.</em>
     </div>
@@ -935,7 +935,7 @@ body.map-open .dock{transform:translateY(140%)}
     </div>
     <div class="beats">
       <div class="rv"><span class="bl">The problem</span><p>A short-let operation had outgrown its spreadsheets. Bookings on the platforms, costs in one sheet, documents in a folder, bank records somewhere else. The problem was not a missing dashboard, it was that the operating information of the business was fragmented and no figure could be traced back to anything.</p></div>
-      <div class="rv"><span class="bl">The design</span><p>Designed an internal system around the workflow instead of around the spreadsheets. Bookings, expenses, documents, property performance, targets and reporting in one place, with revenue, profit, occupancy, ADR and RevPAR derived from the records rather than cached, and every figure traceable to its source. Documents go upload, extract, review, confirm, and anything confirmed can be undone.</p></div>
+      <div class="rv"><span class="bl">The design</span><p>Built a Flask and SQLite application that connects bookings, expenses, documents, targets and reports to a property-by-property workspace and portfolio map. Context-aware filters and comparisons make it possible to move between portfolio KPIs and the underlying records without losing the selected period or property. Revenue, profit, occupancy, ADR and RevPAR are calculated from source records rather than cached totals. Document processing follows an explicit upload, extract, review and confirm workflow, with a way to undo confirmed entries.</p></div>
       <div class="rv"><span class="bl">The hard part</span><p>The hard part was the accounting rather than the charts. A property-month can carry revenue from two sources, so each month has one active source and a stay crossing a month boundary splits across both. Managed flats count only the management fee, never the owner's revenue. Get that wrong and every number above it is quietly wrong.</p></div>
     </div>
     <div class="tool rv">
@@ -952,7 +952,7 @@ body.map-open .dock{transform:translateY(140%)}
         </div>
       </div>
       <div class="flow" id="flow"><span>A document's path</span><b>upload</b><i class="ar">→</i><b>extract</b><i class="ar">→</i><b>review</b><i class="ar">→</i><b>confirm</b><i class="ar">↺</i><b>undo</b></div>
-      <p class="disclose">Built with Claude Code. The application is Python, Flask and SQLite; my work was the operational problem, the business rules, how information should flow, the KPI logic, the product and UX direction, and iterating it until it was actually useful. The demo uses synthetic data.</p>
+      <p class="disclose">Built with Claude Code using Python, Flask and SQLite. My role covered the operational problem, business rules, data and KPI logic, product structure, UX direction and iterative testing. The linked Fernhill Stays demo is publicly accessible, read-only and populated entirely with synthetic data; the complete application source and real operational data remain private.</p>
       <div class="lnk">
         <a class="solid" href="https://fernhill-property-dashboard.onrender.com" target="_blank" rel="noopener">Try the demo ↗</a>
       </div>
